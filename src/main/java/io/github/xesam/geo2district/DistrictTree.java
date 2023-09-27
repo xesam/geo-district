@@ -1,6 +1,5 @@
 package io.github.xesam.geo2district;
 
-import com.sun.istack.internal.Nullable;
 import io.github.xesam.gis.core.Coordinate;
 import io.github.xesam.gis.core.Relation;
 
@@ -63,7 +62,6 @@ public class DistrictTree {
         return Optional.of(current);
     }
 
-    @Nullable
     private DistrictTree findTreeByName(List<DistrictTree> trees, String treeName) {
         for (DistrictTree tree : trees) {
             District district = tree.getDistrict();
